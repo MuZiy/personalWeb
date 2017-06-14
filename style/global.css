@@ -1,0 +1,78 @@
+*{margin: 0; padding: 0;}
+li{ list-style: none;}
+body{ font-family: "monospace"}
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
+.clearfix{*zoom:1;}
+.fl{ float: left;}
+.fr{float: right;}
+
+/*首页 home*/
+.page{ width: 100%;}
+.title{ width: 100%; background: url("../images/bg_home.jpg") no-repeat  center; text-align: center;}
+.overlay{ position: relative; width: 100%; background-color: rgba(255,144,0,0.9);}
+.home_cont{ position: absolute; left: 42%; top: 30%;}
+.home_cont img{ width: 200px; height: 200px; border-radius: 50%;}
+.home_cont h1{ margin-top: 20px; transform:rotate(-10deg); color: #fff;}
+.home_cont h3{ margin-top: 20px; color: #fff;}
+
+/*个人简介 intro*/
+.intro{ width: 100%; margin-top: 50px;  text-align: center; background-color: #fff;}
+.intro h2{ margin: 50px 0;}
+.infor{ float: left; width: 35%;  margin-left: 10%; text-align: left; }
+.infor li{ height: 50px; line-height: 50px; font-weight: bold;}
+.infor span,a{ font-weight: normal; color: rgba(0,0,0,.5)}
+.words{ float: left; width: 45%;  margin-right: 10%; text-align: left;}
+.words p{margin-top: 20px; line-height: 35px; color: rgba(0,0,0,.5);}
+
+/*个人经历 resumer*/
+.resume{ width: 100%; margin-top:50px; text-align: center;}
+.exper{ position: relative; width: 80%; margin: 0 10%; text-align: center;}
+.exper li>h3{width: 100px; margin: 100px auto 0;  font-size:16px;  line-height: 30px; background-color: #e6e6e6; border-radius: 5px;}
+.exper li{ position: relative; }
+.line{ position: absolute;  width: 2px;  height:700px; margin-left:49.8%; margin-top:100px; background-color: #e6e6e6;}
+.time{position: absolute; margin-top: 20px; left: 48%; width: 40px; height: 40px; border-radius: 50%; background-color: #ff9000;}
+.time i{ display: inline-block; width: 32px; height: 32px; margin-top: 4px;  background:url("../images/time.png")  no-repeat center;}
+.ex_cont{ width: 40%; margin-top: 50px; text-align: right;}
+.ex_cont h3{ font-size: 16px;}
+.ex_cont span{  display:inline-block; margin: 10px 0; color: #bfbfbf;}
+.ex_fr{margin-left:  60%; text-align: left;!important;}
+
+/*专业技能 skill*/
+.skill{ width: 80%; margin: 0 10%; }
+.skill h2{ margin-top:100px ; text-align: center;}
+.skill_cont{ width: 80%; margin: 50px 10%;}
+.skill_cont p{ text-align: left;}
+.skill_cont p span{ margin-left: 80%;}
+.bar{ width: 100%; height: 10px; background-color: #bfbfbf; border-radius: 10px;}
+.bar div{ height:100%;  border-radius: 10px;}
+
+/*项目展示 item*/
+.item{ width: 100% ;  padding: 100px 0;  background-color: #ff9000; text-align: center;}
+.item h2{ color: #fff; margin-bottom: 20px; }
+.item_list{ width: 80%; margin: 20px auto; text-align: center;}
+.item_list  li{ float: left; position: relative; width: 23.5%; margin:  5px;}
+.item_list a{ display: inline-block; }
+.item_list img{ width:100%}
+.item_list  p{display: none; position: absolute; top: 0; left: 0;  width: 100%; height: 53.5%;  padding-top:46%;background-color: #fff; text-align: center; color: #000; }
+.item_list  p span{ display: block; font-size: 14px; color: #bfbfbf;}
+
+/*自适应*/
+@media screen and  (max-width: 600px) {
+    /*首页 home*/
+    .home_cont{left: 35%;}
+    /*个人简介 intro*/
+    .infor{ float: none; width: 80%;}
+    .words{float: none; width:80%; margin-left: 10%; margin-top: 20px;}
+    /*个人经历 expr*/
+    .line{ margin-left: 10%;}
+    .time{left:-4%;}
+    .exper li>h3{ margin-left: 0;}
+    .ex_cont{ width: 80%; margin-top: 50px;  margin-left:80px; text-align: left;}
+    /*项目展示 item*/
+    .item_list{width: 60%;}
+    .item_list  li{ float: none; width: 100%; text-align: center;}
+
+
+
+}
+

@@ -50,14 +50,26 @@ body{ font-family: "monospace"}
 .item{ width: 100% ;  padding: 100px 0;  background-color: #ff9000; text-align: center;}
 .item h2{ color: #fff; margin-bottom: 20px; }
 .item_list{ width: 80%; margin: 20px auto; text-align: center;}
-.item_list  li{ float: left; position: relative; width: 23.5%; margin:  5px;}
+.item_list  li{float: left; position: relative; width: 23.5%; margin:  5px;}
 .item_list a{ display: inline-block; }
 .item_list img{ width:100%}
-.item_list  p{display: none; position: absolute; top: 0; left: 0;  width: 100%; height: 53.5%;  padding-top:46%;background-color: #fff; text-align: center; color: #000; }
-.item_list  p span{ display: block; font-size: 14px; color: #bfbfbf;}
+.item_list  p{opacity: 0; position: absolute; top: 0; left: 0;  width: 100%; height: 99%;background-color: #fff; text-align: center; color: #000; }
+.item_list li span{opacity: 0.4; position: absolute; display: block; width: 100%; text-align: center;}
+.item_list li .name{top: 80px;color: #000;}
+.item_list li .type{bottom: 80px; display: block; font-size: 14px; color: #bfbfbf;}
+
 
 /*自适应*/
-@media screen and  (max-width: 600px) {
+@media screen and  (min-width: 601px) {
+    .item_list  p{transition: opacity 1s;  -webkit-transition: opacity 1s; }
+    .item_list p:hover{opacity: 1;}
+    .item_list  .name{transition: top 1s;  -webkit-transition: top 1s; }
+    .item_list li:hover .name{top:100px; opacity: 1;}
+    .item_list  .type{transition: bottom 1s;  -webkit-transition: bottom 1s;}
+    .item_list li:hover .type{bottom: 100px; opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
     /*首页 home*/
     .home_cont{left: 35%;}
     /*个人简介 intro*/
@@ -71,8 +83,7 @@ body{ font-family: "monospace"}
     /*项目展示 item*/
     .item_list{width: 60%;}
     .item_list  li{ float: none; width: 100%; text-align: center;}
-
-
-
+    .item_list  p{ display: block;opacity: 1; background-color: rgba(255,255,255,0.6);}
+   .item_list  p .name{ opacity: 1;top:145px;}
+    .item_list  p .type{ opacity: 1; bottom: 145px;}
 }
-

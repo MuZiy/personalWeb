@@ -151,42 +151,59 @@
         <ul class="item_list clearfix">
             <li><a href="http://www.wltzgs.com/index.html" target="_blank">
                 <img src="images/item1.jpg" alt="项目1">
-                <p>卧龙投资有限公司 <span>公司项目</span></p>
+                <p>
+                    <span class="name">卧龙投资有限公司</span>
+                    <span class="type">公司项目</span>
+                </p>
             </a>
             </li>
             <li><a href="#" target="_blank">
                 <img src="images/item2.jpg" alt="项目2">
-                <p>网预约挂号系统 <span>个人项目</span></p>
+                <p>
+                    <span class="name">网预约挂号系统</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
             <li><a href="#" target="_blank">
                 <img src="images/item3.jpg" alt="项目3">
-                <p>泰州H5 <span>公司项目（无链接地址）</span></p>
+                <p>
+                    <span class="name">自适应网页练习</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
             <li><a href="https://muziy.github.io/responsiveWeb/" target="_blank">
                 <img src="images/item4.jpg" alt="项目4">
-                <p>自适应网页练习 <span>个人项目</span></p>
+                <p>
+                    <span class="name">个人网站</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
-            <li><a href="#" target="_blank">
+            <li><a href="https://muziy.github.io/personalWeb/" target="_blank">
                 <img src="images/item1.jpg" alt="项目1">
-                <p>个人网站 <span>个人项目</span></p>
+                <p>
+                    <span class="name">暂无 </span>
+                    <span class="type">暂无</span></p>
             </a>
             </li>
             <li><a href="#" target="_blank">
                 <img src="images/item2.jpg" alt="项目2">
-                <p>网预约挂号系统 <span>个人项目</span></p>
+                <p>
+                    <span class="name">暂无</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
             <li><a href="#" target="_blank">
                 <img src="images/item3.jpg" alt="项目3">
-                <p>泰州H5 <span>公司项目（无链接地址）</span></p>
+                <p>
+                    <span class="name">暂无</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
             <li><a href="#" target="_blank">
                 <img src="images/item4.jpg" alt="项目4">
-                <p>自适应网页练习 <span>个人项目</span></p>
+                <p>
+                    <span class="name">暂无</span>
+                    <span class="type">个人项目</span></p>
             </a>
             </li>
         </ul>
@@ -196,20 +213,28 @@
 <script>
     $(function () {
         var wHeight = $(window).height();
-        $('.title').css("height", wHeight);
+        var wWidth=$(window).width();
+        $(".title").css("height", wHeight);
         $(".overlay").css("height", wHeight);
         $(window).resize(function () {
          var wHeight = $(window).height();
-         $('.title').css("height", wHeight);
+         var wWidth=$(window).width();
+         $(".title").css("height", wHeight);
          $(".overlay").css("height", wHeight);
-         })
-
-        $('.item_list  li').mouseenter(function () {
-            $(this).find("p").fadeIn("slow");
-        })
-        $('.item_list  li').mouseleave(function () {
-            $(this).find("p").fadeOut("slow");
-        })
-    })
+         });
+    });
+    //项目展示的动画
+    function animat(a) {
+        console.log(a);
+        if(a > 600){
+            console.log("shdjash");
+            $(".item_list  li").mouseenter(function () {
+                $(this).find("p").fadeIn("slow");
+            });
+            $(".item_list  li").mouseleave(function () {
+                $(this).find("p").fadeOut("slow");
+            });
+        }
+    }
 </script>
 </html>

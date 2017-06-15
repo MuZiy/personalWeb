@@ -5,6 +5,13 @@ body{ font-family: "monospace"}
 .clearfix{*zoom:1;}
 .fl{ float: left;}
 .fr{float: right;}
+@font-face {
+    font-family:'腾祥小新体简';
+    src: url("../font/腾祥小新体简.eot");
+    src: url("../font/腾祥小新体简.ttf");
+    src: url("../font/腾祥小新体简.woff");
+
+}
 
 /*首页 home*/
 .page{ width: 100%;}
@@ -12,8 +19,8 @@ body{ font-family: "monospace"}
 .overlay{ position: relative; width: 100%; background-color: rgba(255,144,0,0.9);}
 .home_cont{ position: absolute; left: 42%; top: 30%;}
 .home_cont img{ width: 200px; height: 200px; border-radius: 50%;}
-.home_cont h1{ margin-top: 20px; transform:rotate(-10deg); color: #fff;}
-.home_cont h3{ margin-top: 20px; color: #fff;}
+.home_cont .name{ margin-top: 20px; font-family:"腾祥小新体简"; font-size: 30px; transform:rotate(-10deg); color: #fff;}
+.home_cont .post{ margin-top: 20px;font-family:"腾祥小新体简"; font-size: 24px; color: #fff;}
 
 /*个人简介 intro*/
 .intro{ width: 100%; margin-top: 50px;  text-align: center; background-color: #fff;}

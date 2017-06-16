@@ -36,7 +36,7 @@ body{ font-family: "monospace"}
 .exper{ position: relative; width: 80%; margin: 0 10%; text-align: center;}
 .exper li>h3{width: 100px; margin: 100px auto 0;  font-size:16px;  line-height: 30px; background-color: #e6e6e6; border-radius: 5px;}
 .exper li{ position: relative; }
-.line{ position: absolute;  width: 2px;  height:700px; margin-left:49.8%; margin-top:100px; background-color: #e6e6e6;}
+.line{ position: absolute;  width: 2px;  height:730px; margin-left:49.8%; margin-top:100px; background-color: #e6e6e6;}
 .time{position: absolute; margin-top: 20px; left: 48%; width: 40px; height: 40px; border-radius: 50%; background-color: #ff9000;}
 .time i{ display: inline-block; width: 32px; height: 32px; margin-top: 4px;  background:url("../images/time.png")  no-repeat center;}
 .ex_cont{ width: 40%; margin-top: 50px; text-align: right;}
@@ -78,7 +78,7 @@ body{ font-family: "monospace"}
 
 @media screen and (max-width: 600px) {
     /*首页 home*/
-    .home_cont{left: 30%;top:20%;}
+    .home_cont{left: 28%;top:25%;}
     /*个人简介 intro*/
     .infor{ float: none; width: 80%;}
     .words{float: none; width:80%; margin-left: 10%; margin-top: 20px;}
@@ -88,10 +88,9 @@ body{ font-family: "monospace"}
     .exper li>h3{ margin-left: 0;}
     .ex_cont{ width: 80%; margin-top: 50px;  margin-left:80px; text-align: left;}
     /*项目展示 item*/
-    /*.item_list{width: 90%;}*/
-    .item_list  li{ float: none; width: 50%; margin: 5px auto; text-align: center;}
+    .item_list  li{ float: none; width: 60%; margin: 5px auto; text-align: center;}
     .item_list img{ width:100%;}
-    .item_list  p{ display: block;width: 100%; opacity: 1; background-color: rgba(255,255,255,0.6);}
-   .item_list  p .name{ opacity: 1;top:40%;}
-    .item_list  p .type{ opacity: 1; bottom: 40%;}
+    .item_list  p{ display: block; opacity: 1; background-color: rgba(255,255,255,0.8);}
+   .item_list  p .name{ opacity: 1;top:30%;}
+    .item_list  p .type{ opacity: 1; bottom: 30%;}
 }

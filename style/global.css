@@ -78,7 +78,7 @@ body{ font-family: "monospace"}
 
 @media screen and (max-width: 600px) {
     /*首页 home*/
-    .home_cont{left: 28%;top:25%;}
+    .home_cont{left: 22%;top:22%;}
     /*个人简介 intro*/
     .infor{ float: none; width: 80%;}
     .words{float: none; width:80%; margin-left: 10%; margin-top: 20px;}

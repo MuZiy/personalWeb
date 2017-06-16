@@ -56,7 +56,7 @@ body{ font-family: "monospace"}
 /*项目展示 item*/
 .item{ width: 100% ;  padding: 100px 0;  background-color: #ff9000; text-align: center;}
 .item h2{ color: #fff; margin-bottom: 20px; }
-.item_list{ width: 80%; margin: 20px auto; text-align: center;}
+.item_list{padding: 0 10%; margin: 20px auto; text-align: center;}
 .item_list  li{float: left; position: relative; width: 23.5%; margin:  5px;}
 .item_list a{ display: inline-block; }
 .item_list img{ width:100%}
@@ -78,19 +78,20 @@ body{ font-family: "monospace"}
 
 @media screen and (max-width: 600px) {
     /*首页 home*/
-    .home_cont{left: 35%;}
+    .home_cont{left: 30%;top:20%;}
     /*个人简介 intro*/
     .infor{ float: none; width: 80%;}
     .words{float: none; width:80%; margin-left: 10%; margin-top: 20px;}
     /*个人经历 expr*/
     .line{ margin-left: 10%;}
-    .time{left:-4%;}
+    .time{left:-5%;}
     .exper li>h3{ margin-left: 0;}
     .ex_cont{ width: 80%; margin-top: 50px;  margin-left:80px; text-align: left;}
     /*项目展示 item*/
-    .item_list{width: 60%;}
-    .item_list  li{ float: none; width: 100%; text-align: center;}
-    .item_list  p{ display: block;opacity: 1; background-color: rgba(255,255,255,0.6);}
-   .item_list  p .name{ opacity: 1;top:145px;}
-    .item_list  p .type{ opacity: 1; bottom: 145px;}
+    /*.item_list{width: 90%;}*/
+    .item_list  li{ float: none; width: 50%; margin: 5px auto; text-align: center;}
+    .item_list img{ width:100%;}
+    .item_list  p{ display: block;width: 100%; opacity: 1; background-color: rgba(255,255,255,0.6);}
+   .item_list  p .name{ opacity: 1;top:40%;}
+    .item_list  p .type{ opacity: 1; bottom: 40%;}
 }
